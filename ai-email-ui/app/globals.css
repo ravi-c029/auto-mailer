@@ -1,0 +1,76 @@
+/* @import "tailwindcss";
+
+@theme {
+  --color-neon-cyan: #22d3ee;
+  --color-glass-bg: rgba(0, 0, 0, 0.6);
+} */
+
+/* :root {
+  background-color: #09090b;
+  color: #22d3ee; 
+} */
+
+/* Custom glow effect for that JARVIS feel */
+/* .glow-text {
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.8);
+} */
+
+@import "tailwindcss";
+
+@theme {
+  --color-neon-cyan: #22d3ee;
+  --color-neon-orange: #f97316;
+}
+
+:root {
+  background: #020617;
+  color: #22d3ee;
+  overflow-x: hidden;
+}
+
+/* Burning Embers Background */
+.bg-universe {
+  background: radial-gradient(circle at 50% 50%, #0c0a09 0%, #020617 100%);
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+.ember {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(1px);
+  animation: rise 15s infinite ease-in;
+  opacity: 0;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(110vh) translateX(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(100px);
+    opacity: 0;
+  }
+}
+
+.glass-panel {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(34, 211, 238, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}
+
+.neon-btn-orange {
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.3);
+  transition: all 0.3s ease;
+}
+
+.neon-btn-orange:hover {
+  box-shadow: 0 0 30px rgba(249, 115, 22, 0.6);
+  transform: translateY(-2px);
+}
