@@ -1,5 +1,22 @@
+# Node & Build files
 node_modules/
+.next/
+out/
+build/
+__pycache__/
+
+# Environment Variables (Security)
 .env
+.env.local
+.env.*
+
+# Sensitive Project Data
+campaign_progress.json
 sent_log.txt
-progress.json
-.next
+
+# Target Leads & Documents
+*.csv
+*.pdf
+/python_script
+remove_failed.py
+script.py
